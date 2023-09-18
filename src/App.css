@@ -1,38 +1,93 @@
-.App {
-  text-align: center;
+html {
+  height: 100vh;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
+  margin-top: 100px;
   display: flex;
-  flex-direction: column;
+  -webkit-box-align: center;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-direction: column;
+  min-height: 100vh;
+}
+form{
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  flex-direction: row;
+  margin-top: var(--chakra-space-4);
+  margin-bottom: var(--chakra-space-4);
+}
+.button {
+  font: inherit;
+  width: 100px;
+  height: 55px;
+  margin-left: 10px;
+  border: 1px solid transparent;
+  color: black;
+  background: #a8dcfa;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 1.2rem;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button:hover,
+.button:active {
+  background: #7eccf9;
+  border-color: transparent;
+  color: black;
+}
+
+.input {
+  width: 250px;
+  height: 50px;
+  border-color: transparent;
+  background-color: #232934;
+  border-radius: 6px;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.input:focus {
+  border: 2px solid #63c6ff;
+  outline: none;
+  background-color: #1b1e25;
+}
+
+.input_invalid {
+  width: 250px;
+  height: 50px;
+  border: 2px solid red;
+  border-radius: 6px;
+  background-color: #373a43bc;
+  font-size: 1.2rem;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.input_invalid:focus {
+  border: 2px solid #63c6ff;
+  outline: none;
+  background-color: #1b1e25;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.itemlist{
+  display: flex;
+  -webkit-box-align: stretch;
+  align-items: stretch;
+  flex-direction: column;
+  border-color: #EDF2F7;
+  border-width: 10px;
+  padding: 1.25rem;
+  margin : 30px;
+  border-radius: 0.5rem;
+  width: 100%;
+  max-width: 50vw;
+  border-style: solid;
+  box-sizing: border-box;
+}
+p{
+  font-size: 25px;
 }

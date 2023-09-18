@@ -1,0 +1,29 @@
+
+.item{
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    flex-direction: row;
+    opacity: 1;
+    }
+    
+    p{
+    
+        width: 100%;
+        padding: 8px;
+        border-radius: var(--chakra-radii-lg);
+    }
+    
+    
+    button{
+        margin-right: 20px;
+        border: none;
+        width: 40px;
+        height: 40px;
+        background-size: cover;
+        cursor: pointer;
+        background-image : url('../image/delete.jpg');
+       
+    } 
+    
+    
