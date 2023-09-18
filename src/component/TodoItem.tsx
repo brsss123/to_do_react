@@ -1,12 +1,8 @@
 import React from "react"
 import { NumberLiteralType } from "typescript";
 import  "./css/TodoItem.css"
-
-export interface TodoItemProps{
-    item : string;
-    index : number;
-    onDeleteItem : (index : number) => void;
-}
+import {TodoItemProps } from "../interface/todoInterface";
+                                
 
 //react 에서는 class x -> className
 // 비구조화 할당 
